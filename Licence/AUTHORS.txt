@@ -1,11 +1,9 @@
-AUTHORS for PC INpact Toolkit for Chrome™
+﻿AUTHORS for PC INpact Browser Memory Logger
 
-PC INpact Toolkit for Chrome™ est une extension destinée au navigateur Chrome permettant d'accéder à de nombreuses fonctionnalités de PC INpact.
-Vous y retrouverez les actualités, brèves, calendriers et annonces d'emploi du site, mais aussi les bons plans de Prix du Net.
-Des notifications peuvent aussi être affichées sur votre bureau, à chaque nouvelle publication sur le site (actualités, dossiers, tests).
+PC INpact Browser Memory Logger est une application vous permettant de connaître la consommation mémoire des navigateurs fonctionnant sur votre machine.
+Vous pouvez aussi effectuer un log au sein de fichiers CSV afin d'étudier l'évolution de cette valeur dans le temps.
 
-Projet GitHub : http://pci.im/GitHub-PCi-Chrome-Ext
-Forum : http://pci.im/forum-pci-chrome
+Projet GitHub : https://github.com/PCINpact/PCi-BML
 
 ---------------
 ---------------
