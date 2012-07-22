@@ -1,0 +1,13 @@
+AUTHORS for PC INpact Toolkit for Chrome™
+
+PC INpact Toolkit for Chrome™ est une extension destinée au navigateur Chrome permettant d'accéder à de nombreuses fonctionnalités de PC INpact.
+Vous y retrouverez les actualités, brèves, calendriers et annonces d'emploi du site, mais aussi les bons plans de Prix du Net.
+Des notifications peuvent aussi être affichées sur votre bureau, à chaque nouvelle publication sur le site (actualités, dossiers, tests).
+
+Projet GitHub : http://pci.im/GitHub-PCi-Chrome-Ext
+Forum : http://pci.im/forum-pci-chrome
+
+---------------
+---------------
+
+Main author : LEGRAND David <david@pcinpact.com>
