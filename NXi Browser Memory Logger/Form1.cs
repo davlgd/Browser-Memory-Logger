@@ -68,7 +68,7 @@ namespace NXi_Browser_Memory_Logger
             Process[] processes = Process.GetProcesses();
 
             // On définit une liste des applications pouvant être reconnues
-            string[] supportedProcessNames = { "firefox", "chrome", "iexplore", "opera" };
+            string[] supportedProcessNames = { "firefox", "chrome", "iexplore", "opera", "microsoftedge", "vivaldi" };
             List<string> supportedApps = new List<string>(supportedProcessNames);
             supportedApps.Sort();
 
@@ -93,6 +93,15 @@ namespace NXi_Browser_Memory_Logger
             {
                 // On récupère les infos du processus et on rajoute une ligne dans la ListBox
                 long[] pMemInfos = processManager.getUsedMem(a);
+
+                // On gère le cas spécifique de Microsoft Edge qui a deux noms de processus différents
+                if (a == "Microsoftedge")
+                {
+                    long[] pMemInfosCP = processManager.getUsedMem("Microsoftedgecp");
+                    pMemInfos[0] += pMemInfosCP[0];
+                    pMemInfos[1] += pMemInfosCP[1];
+                }
+
                 lbResult.Items.Add(string.Format("{0} : {1}", a, processManager.getMemUsedString(pMemInfos)));
 
                 // Si l'on a demandé un log dans le fichier CSV, on rajoute les valeurs récupérées
