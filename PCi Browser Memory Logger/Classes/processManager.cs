@@ -18,7 +18,7 @@
 using System.Diagnostics;
 using System.Globalization;
 
-namespace PCi_Browser_Memory_Logger
+namespace NXi_Browser_Memory_Logger
 {
     class processManager
     {

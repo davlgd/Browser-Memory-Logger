@@ -18,7 +18,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace PCi_Browser_Memory_Logger
+namespace NXi_Browser_Memory_Logger
 {
     static class Program
     {

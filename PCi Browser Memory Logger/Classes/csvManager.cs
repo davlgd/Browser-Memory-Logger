@@ -17,7 +17,7 @@
 
 using System.IO;
 
-namespace PCi_Browser_Memory_Logger
+namespace NXi_Browser_Memory_Logger
 {
     class csvManager
     {

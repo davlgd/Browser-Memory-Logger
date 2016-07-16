@@ -21,7 +21,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 
-namespace PCi_Browser_Memory_Logger
+namespace NXi_Browser_Memory_Logger
 {
     public partial class Form1 : Form
     {
@@ -124,10 +124,10 @@ namespace PCi_Browser_Memory_Logger
             btnCsvOpen.Enabled = File.Exists(selectedProcessCSVFileName()) & !chkLog.Checked ? true : false;
         }
 
-        // Lorsque l'on clique sur le lien vers PCi
-        private void lnkPCi_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        // Lorsque l'on clique sur le lien vers NXi
+        private void lnkNXi_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("http://www.pcinpact.com");
+            Process.Start("http://www.nextinpact.com");
         }
 
         // Lorsque le timer s'active

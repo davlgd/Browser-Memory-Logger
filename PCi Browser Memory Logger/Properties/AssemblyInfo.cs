@@ -22,12 +22,12 @@ using System.Runtime.InteropServices;
 // Les informations générales relatives à un assembly dépendent de 
 // l'ensemble d'attributs suivant. Changez les valeurs de ces attributs pour modifier les informations
 // associées à un assembly.
-[assembly: AssemblyTitle("PCi Browser Memory Logger")]
+[assembly: AssemblyTitle("NXi Browser Memory Logger")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("PC INpact SARL")]
-[assembly: AssemblyProduct("PCi Browser Memory Logger")]
-[assembly: AssemblyCopyright("Copyright © 2012 - LEGRAND David")]
+[assembly: AssemblyCompany("INpact MediaGroup")]
+[assembly: AssemblyProduct("NXi Browser Memory Logger")]
+[assembly: AssemblyCopyright("Copyright © 2016 - LEGRAND David")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

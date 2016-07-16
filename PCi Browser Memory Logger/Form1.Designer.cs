@@ -15,7 +15,7 @@
 //  You should have received a copy of the GNU General Public License
 //  along with PC INpact Browser Memory Logger.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace PCi_Browser_Memory_Logger
+namespace NXi_Browser_Memory_Logger
 {
     partial class Form1
     {
@@ -50,7 +50,7 @@ namespace PCi_Browser_Memory_Logger
             this.tUpdate = new System.Windows.Forms.Timer(this.components);
             this.chkLog = new System.Windows.Forms.CheckBox();
             this.btnCsvOpen = new System.Windows.Forms.Button();
-            this.lnkPCi = new System.Windows.Forms.LinkLabel();
+            this.lnkNXi = new System.Windows.Forms.LinkLabel();
             this.lbResult = new System.Windows.Forms.ListBox();
             this.btnCsvClean = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -82,16 +82,16 @@ namespace PCi_Browser_Memory_Logger
             this.btnCsvOpen.UseVisualStyleBackColor = true;
             this.btnCsvOpen.Click += new System.EventHandler(this.btnCSVOpen_Click);
             // 
-            // lnkPCi
+            // lnkNXi
             // 
-            this.lnkPCi.AutoSize = true;
-            this.lnkPCi.Location = new System.Drawing.Point(12, 110);
-            this.lnkPCi.Name = "lnkPCi";
-            this.lnkPCi.Size = new System.Drawing.Size(76, 13);
-            this.lnkPCi.TabIndex = 4;
-            this.lnkPCi.TabStop = true;
-            this.lnkPCi.Text = "PCINpact.com";
-            this.lnkPCi.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkPCi_LinkClicked);
+            this.lnkNXi.AutoSize = true;
+            this.lnkNXi.Location = new System.Drawing.Point(12, 110);
+            this.lnkNXi.Name = "lnkNXi";
+            this.lnkNXi.Size = new System.Drawing.Size(87, 13);
+            this.lnkNXi.TabIndex = 4;
+            this.lnkNXi.TabStop = true;
+            this.lnkNXi.Text = "Next INpact.com";
+            this.lnkNXi.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkNXi_LinkClicked);
             // 
             // lbResult
             // 
@@ -119,7 +119,7 @@ namespace PCi_Browser_Memory_Logger
             this.ClientSize = new System.Drawing.Size(406, 132);
             this.Controls.Add(this.btnCsvClean);
             this.Controls.Add(this.lbResult);
-            this.Controls.Add(this.lnkPCi);
+            this.Controls.Add(this.lnkNXi);
             this.Controls.Add(this.btnCsvOpen);
             this.Controls.Add(this.chkLog);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -136,7 +136,7 @@ namespace PCi_Browser_Memory_Logger
         private System.Windows.Forms.Timer tUpdate;
         private System.Windows.Forms.CheckBox chkLog;
         private System.Windows.Forms.Button btnCsvOpen;
-        private System.Windows.Forms.LinkLabel lnkPCi;
+        private System.Windows.Forms.LinkLabel lnkNXi;
         private System.Windows.Forms.ListBox lbResult;
         private System.Windows.Forms.Button btnCsvClean;
     }
