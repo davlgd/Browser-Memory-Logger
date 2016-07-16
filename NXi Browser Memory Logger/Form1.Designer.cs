@@ -99,7 +99,6 @@ namespace NXi_Browser_Memory_Logger
             this.lbResult.Location = new System.Drawing.Point(12, 12);
             this.lbResult.Name = "lbResult";
             this.lbResult.Size = new System.Drawing.Size(218, 95);
-            this.lbResult.Sorted = true;
             this.lbResult.TabIndex = 6;
             this.lbResult.SelectedIndexChanged += new System.EventHandler(this.lbResult_SelectedIndexChanged);
             // 
