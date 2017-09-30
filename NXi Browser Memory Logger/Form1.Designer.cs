@@ -15,7 +15,7 @@
 //  You should have received a copy of the GNU General Public License
 //  along with PC INpact Browser Memory Logger.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace NXi_Browser_Memory_Logger
+namespace Browser_Memory_Logger
 {
     partial class Form1
     {
@@ -82,7 +82,7 @@ namespace NXi_Browser_Memory_Logger
             this.btnCsvOpen.UseVisualStyleBackColor = true;
             this.btnCsvOpen.Click += new System.EventHandler(this.btnCSVOpen_Click);
             // 
-            // lnkNXi
+            // lnk
             // 
             this.lnkNXi.AutoSize = true;
             this.lnkNXi.Location = new System.Drawing.Point(12, 110);
@@ -91,7 +91,7 @@ namespace NXi_Browser_Memory_Logger
             this.lnkNXi.TabIndex = 4;
             this.lnkNXi.TabStop = true;
             this.lnkNXi.Text = "Next INpact.com";
-            this.lnkNXi.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkNXi_LinkClicked);
+            this.lnkNXi.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk_LinkClicked);
             // 
             // lbResult
             // 

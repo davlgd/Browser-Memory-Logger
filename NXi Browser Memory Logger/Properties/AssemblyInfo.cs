@@ -1,32 +1,14 @@
-﻿//  Copyright © 2011-2012 LEGRAND David <david@pcinpact.com>    
-//  
-//  This file is part of PC INpact Browser Memory Logger.
-//
-//  PC INpact Browser Memory Logger is free software: you can redistribute it and/or modify
-//  it under the terms of the GNU General Public License as published by
-//  the Free Software Foundation, either version 3 of the License, or
-//  (at your option) any later version.
-//
-//  PC INpact Browser Memory Logger is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//  GNU General Public License for more details.
-//
-//  You should have received a copy of the GNU General Public License
-//  along with PC INpact Browser Memory Logger.  If not, see <http://www.gnu.org/licenses/>.
-
-using System.Reflection;
-using System.Runtime.CompilerServices;
+﻿using System.Reflection;
 using System.Runtime.InteropServices;
 
 // Les informations générales relatives à un assembly dépendent de 
 // l'ensemble d'attributs suivant. Changez les valeurs de ces attributs pour modifier les informations
 // associées à un assembly.
-[assembly: AssemblyTitle("NXi Browser Memory Logger")]
+[assembly: AssemblyTitle("Browser Memory Logger")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("INpact MediaGroup")]
-[assembly: AssemblyProduct("NXi Browser Memory Logger")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("Browser Memory Logger")]
 [assembly: AssemblyCopyright("Copyright © 2016 - LEGRAND David")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
