@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Browser Memory Logger", "NXi Browser Memory Logger\Browser Memory Logger.csproj", "{58B294B6-3890-4AC2-8723-340A0C7DA66C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Browser Memory Logger", "Browser Memory Logger\Browser Memory Logger.csproj", "{58B294B6-3890-4AC2-8723-340A0C7DA66C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
