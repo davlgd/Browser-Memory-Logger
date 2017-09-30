@@ -82,7 +82,7 @@ namespace Browser_Memory_Logger
             this.btnCsvOpen.UseVisualStyleBackColor = true;
             this.btnCsvOpen.Click += new System.EventHandler(this.btnCSVOpen_Click);
             // 
-            // lnk
+            // lnkNXi
             // 
             this.lnkNXi.AutoSize = true;
             this.lnkNXi.Location = new System.Drawing.Point(12, 110);
