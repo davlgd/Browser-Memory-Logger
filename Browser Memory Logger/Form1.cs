@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
+using AppsToolkit;
 
 namespace Browser_Memory_Logger
 {
@@ -10,7 +11,7 @@ namespace Browser_Memory_Logger
     {
 
         List<string> detectedApps = new List<string>();                 // La liste des applications détectées
-        csvManager csvM = new csvManager(Application.ProductName);    // On créé le gestionnaire de CSV
+        CSVTools csvManager = new CSVTools(Application.ProductName);    // On créé le gestionnaire de CSV
 
         public Form1()
         {
@@ -20,7 +21,7 @@ namespace Browser_Memory_Logger
             this.Text = String.Format("{0} v{1}", Application.ProductName, Application.ProductVersion);
 
             // On supprime les fichiers CSV précédents
-            csvM.cleanFiles();
+            csvManager.Clean();
 
         }
 
@@ -38,6 +39,9 @@ namespace Browser_Memory_Logger
             }
 
             // On démarre le timer
+            Timer tUpdate = new Timer();
+            tUpdate.Interval = 1000;
+            tUpdate.Tick += tUpdate_Tick;
             tUpdate.Start();
         }
 
@@ -75,20 +79,20 @@ namespace Browser_Memory_Logger
             foreach (string a in detectedApps)
             {
                 // On récupère les infos du processus et on rajoute une ligne dans la ListBox
-                long[] pMemInfos = processManager.getUsedMem(a);
+                long[] pMemInfos = ProcessTools.getUsedMem(a);
 
                 // On gère le cas spécifique de Microsoft Edge qui a deux noms de processus différents
                 if (a == "Microsoftedge")
                 {
-                    long[] pMemInfosCP = processManager.getUsedMem("Microsoftedgecp");
+                    long[] pMemInfosCP = ProcessTools.getUsedMem("Microsoftedgecp");
                     pMemInfos[0] += pMemInfosCP[0];
                     pMemInfos[1] += pMemInfosCP[1];
                 }
 
-                lbResult.Items.Add(string.Format("{0} : {1}", a, processManager.getMemUsedString(pMemInfos)));
+                lbResult.Items.Add(string.Format("{0} : {1}", a, ProcessTools.getMemUsedString(pMemInfos)));
 
                 // Si l'on a demandé un log dans le fichier CSV, on rajoute les valeurs récupérées
-                if (chkLog.Checked) csvM.appendCSV(pMemInfos[0], a);
+                if (chkLog.Checked) csvManager.Append(pMemInfos[0], a);
             }
 
             // Une fois l'update terminée, on récupère l'ancien index. S'il est de -1, on le met à 0
@@ -107,7 +111,7 @@ namespace Browser_Memory_Logger
         private string selectedProcessCSVFileName()
         {
             string process = detectedApps[lbResult.SelectedIndex];
-            return csvM.getCSVFileName(process);
+            return csvManager.GetFilename(process);
         }
 
         // La fonction qui détermine si le bouton d'ouverure du CSV doit être actif ou non
@@ -141,7 +145,7 @@ namespace Browser_Memory_Logger
         private void btnCsvClean_Click(object sender, EventArgs e)
         {
             // On supprime les fichiers CSV, puis on vérifie l'état du bouton d'ouverture du fichier CSV
-            csvM.cleanFiles();
+            csvManager.Clean();
             checkOpenCSVButtonState();
         }
     }

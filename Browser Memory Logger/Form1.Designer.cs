@@ -45,20 +45,13 @@ namespace Browser_Memory_Logger
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.tUpdate = new System.Windows.Forms.Timer(this.components);
             this.chkLog = new System.Windows.Forms.CheckBox();
             this.btnCsvOpen = new System.Windows.Forms.Button();
             this.lnkNXi = new System.Windows.Forms.LinkLabel();
             this.lbResult = new System.Windows.Forms.ListBox();
             this.btnCsvClean = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // tUpdate
-            // 
-            this.tUpdate.Interval = 1000;
-            this.tUpdate.Tick += new System.EventHandler(this.tUpdate_Tick);
             // 
             // chkLog
             // 
@@ -132,8 +125,6 @@ namespace Browser_Memory_Logger
         }
 
         #endregion
-
-        private System.Windows.Forms.Timer tUpdate;
         private System.Windows.Forms.CheckBox chkLog;
         private System.Windows.Forms.Button btnCsvOpen;
         private System.Windows.Forms.LinkLabel lnkNXi;
